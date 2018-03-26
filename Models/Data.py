@@ -33,7 +33,6 @@ class DataModel(QtCore.QAbstractTableModel):
             self.arraydata[0] = entry
         else:
             self.arraydata.append(entry)
-        print(self.arraydata)
         self.layoutChanged.emit()
 
     def remove_entry(self, row_i):
